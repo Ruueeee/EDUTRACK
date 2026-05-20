@@ -1,0 +1,5 @@
+src/components/layout/PageHeader.tsx(6,3): error TS1131: Property or signature expected.
+src/components/layout/PageHeader.tsx(6,11): error TS1128: Declaration or statement expected.
+src/components/layout/PageHeader.tsx(6,12): error TS1128: Declaration or statement expected.
+src/components/layout/PageHeader.tsx(7,12): error TS1109: Expression expected.
+src/components/layout/PageHeader.tsx(8,1): error TS1128: Declaration or statement expected.

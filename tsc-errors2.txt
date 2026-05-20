@@ -1,0 +1,158 @@
+.next/dev/types/validator.ts(225,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/admin/users/[userId]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/admin/users/[userId]">'.
+  Types of property 'PATCH' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { userId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { id: string; createdAt: Date; name: string; ... 4 more ...; passwordHash: string; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ userId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ userId: string; }>; }' is not assignable to type '{ params: { userId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'userId' is missing in type 'Promise<{ userId: string; }>' but required in type '{ userId: string; }'.
+.next/dev/types/validator.ts(252,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/assignments/[assignmentId]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/assignments/[assignmentId]">'.
+  Types of property 'GET' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { assignmentId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { submissions: ({ student: { id: string; ... 6 more ...; passwordHash: string; }; } & { ...; })[]; } & { ...; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ assignmentId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ assignmentId: string; }>; }' is not assignable to type '{ params: { assignmentId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'assignmentId' is missing in type 'Promise<{ assignmentId: string; }>' but required in type '{ assignmentId: string; }'.
+.next/dev/types/validator.ts(288,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/courses/[courseId]/enroll/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/courses/[courseId]/enroll">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { courseId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { id: string; userId: string; joinedAt: Date; courseId: string; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ courseId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ courseId: string; }>; }' is not assignable to type '{ params: { courseId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'courseId' is missing in type 'Promise<{ courseId: string; }>' but required in type '{ courseId: string; }'.
+.next/dev/types/validator.ts(297,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/courses/[courseId]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/courses/[courseId]">'.
+  Types of property 'GET' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { courseId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { id: string; createdAt: Date; title: string; ... 4 more ...; instructorId: string; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ courseId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ courseId: string; }>; }' is not assignable to type '{ params: { courseId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'courseId' is missing in type 'Promise<{ courseId: string; }>' but required in type '{ courseId: string; }'.
+.next/dev/types/validator.ts(315,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/notes/[noteId]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/notes/[noteId]">'.
+  Types of property 'PATCH' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { noteId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: any; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ noteId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ noteId: string; }>; }' is not assignable to type '{ params: { noteId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'noteId' is missing in type 'Promise<{ noteId: string; }>' but required in type '{ noteId: string; }'.
+.next/dev/types/validator.ts(333,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/submissions/[submissionId]/grade/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/submissions/[submissionId]/grade">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { submissionId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { id: string; createdAt: Date; ... 9 more ...; assignmentId: string; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ submissionId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ submissionId: string; }>; }' is not assignable to type '{ params: { submissionId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'submissionId' is missing in type 'Promise<{ submissionId: string; }>' but required in type '{ submissionId: string; }'.
+.next/types/validator.ts(261,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/courses/[courseId]/enroll/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/courses/[courseId]/enroll">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { courseId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { id: string; userId: string; joinedAt: Date; courseId: string; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ courseId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ courseId: string; }>; }' is not assignable to type '{ params: { courseId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'courseId' is missing in type 'Promise<{ courseId: string; }>' but required in type '{ courseId: string; }'.
+.next/types/validator.ts(270,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/courses/[courseId]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/courses/[courseId]">'.
+  Types of property 'GET' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { courseId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { id: string; createdAt: Date; title: string; ... 4 more ...; instructorId: string; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ courseId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ courseId: string; }>; }' is not assignable to type '{ params: { courseId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'courseId' is missing in type 'Promise<{ courseId: string; }>' but required in type '{ courseId: string; }'.
+.next/types/validator.ts(288,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/notes/[noteId]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/notes/[noteId]">'.
+  Types of property 'PATCH' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { noteId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: any; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ noteId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ noteId: string; }>; }' is not assignable to type '{ params: { noteId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'noteId' is missing in type 'Promise<{ noteId: string; }>' but required in type '{ noteId: string; }'.
+.next/types/validator.ts(306,31): error TS2344: Type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/src/app/api/submissions/[submissionId]/grade/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/submissions/[submissionId]/grade">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { submissionId: string; }; }) => Promise<NextResponse<{ data: null; error: string; }> | NextResponse<{ data: { id: string; createdAt: Date; ... 9 more ...; assignmentId: string; }; error: null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ submissionId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ submissionId: string; }>; }' is not assignable to type '{ params: { submissionId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'submissionId' is missing in type 'Promise<{ submissionId: string; }>' but required in type '{ submissionId: string; }'.
+src/app/(dashboard)/instructor/courses/loading.tsx(11,11): error TS2353: Object literal may only specify known properties, and 'label' does not exist in type 'ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<...>'.
+src/app/(dashboard)/student/activity/page.tsx(56,13): error TS2322: Type '{ activities: { id: string; createdAt: Date; action: string; metadata: JsonValue; userId: string; }[]; page: number; totalPages: number; onPageChange: (newPage: number) => void; }' is not assignable to type 'IntrinsicAttributes & ActivityTableProps'.
+  Property 'activities' does not exist on type 'IntrinsicAttributes & ActivityTableProps'.
+src/app/(dashboard)/student/courses/[courseId]/page.tsx(14,13): error TS2561: Object literal may only specify known properties, but 'studentId_courseId' does not exist in type 'EnrollmentWhereUniqueInput'. Did you mean to write 'userId_courseId'?
+src/app/(dashboard)/student/courses/[courseId]/page.tsx(41,23): error TS2551: Property 'course' does not exist on type '{ id: string; userId: string; courseId: string; joinedAt: Date; }'. Did you mean 'courseId'?
+src/app/(dashboard)/student/courses/[courseId]/page.tsx(69,54): error TS7006: Parameter 'announcement' implicitly has an 'any' type.
+src/app/(dashboard)/student/courses/[courseId]/page.tsx(91,52): error TS7006: Parameter 'assignment' implicitly has an 'any' type.
+src/app/(dashboard)/student/courses/[courseId]/page.tsx(92,93): error TS2322: Type '{ key: any; assignment: any; studentId: string; }' is not assignable to type 'IntrinsicAttributes & AssignmentCardProps'.
+  Property 'studentId' does not exist on type 'IntrinsicAttributes & AssignmentCardProps'.
+src/app/(dashboard)/student/courses/loading.tsx(11,11): error TS2353: Object literal may only specify known properties, and 'label' does not exist in type 'ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<...>'.
+src/app/(dashboard)/student/courses/page.tsx(39,23): error TS2322: Type '{ children: Element; onEnrolled: () => void; }' is not assignable to type 'IntrinsicAttributes & { children: ReactNode; }'.
+  Property 'onEnrolled' does not exist on type 'IntrinsicAttributes & { children: ReactNode; }'.
+src/app/(dashboard)/student/courses/page.tsx(49,27): error TS2339: Property 'Skeleton' does not exist on type '({ course, role }: CourseCardProps) => Element'.
+src/app/(dashboard)/student/courses/page.tsx(52,16): error TS2741: Property 'role' is missing in type '{ key: any; course: any; }' but required in type 'CourseCardProps'.
+src/app/(dashboard)/student/notes/page.tsx(94,30): error TS2322: Type '{ children: Element[]; direction: string; className: string; }' is not assignable to type 'IntrinsicAttributes & BasePanelAttributes & { className?: string | undefined; collapsedSize?: string | number | undefined; collapsible?: boolean | undefined; ... 9 more ...; style?: CSSProperties | undefined; } & RefAttributes<...>'.
+  Property 'direction' does not exist on type 'IntrinsicAttributes & BasePanelAttributes & { className?: string | undefined; collapsedSize?: string | number | undefined; collapsible?: boolean | undefined; ... 9 more ...; style?: CSSProperties | undefined; } & RefAttributes<...>'.
+src/app/(dashboard)/student/notes/page.tsx(106,45): error TS2322: Type '(id: string, data: { title: string; content: string; }) => Promise<void>' is not assignable to type '(values: { title: string; content?: string | undefined; courseId?: string | undefined; }) => void'.
+  Target signature provides too few arguments. Expected 2 or more, but got 1.
+src/app/(dashboard)/student/page.tsx(17,18): error TS2353: Object literal may only specify known properties, and 'studentId' does not exist in type 'EnrollmentWhereInput'.
+src/app/(dashboard)/student/page.tsx(41,44): error TS2551: Property 'course' does not exist on type '{ id: string; userId: string; courseId: string; joinedAt: Date; }'. Did you mean 'courseId'?
+src/app/(dashboard)/student/page.tsx(62,25): error TS2769: No overload matches this call.
+  Overload 1 of 4, '(value: string | number | Date): Date', gave the following error.
+    Argument of type 'Date | null' is not assignable to parameter of type 'string | number | Date'.
+      Type 'null' is not assignable to type 'string | number | Date'.
+  Overload 2 of 4, '(value: string | number): Date', gave the following error.
+    Argument of type 'Date | null' is not assignable to parameter of type 'string | number'.
+      Type 'null' is not assignable to type 'string | number'.
+src/app/(dashboard)/student/page.tsx(79,27): error TS2304: Cannot find name 'auth'.
+src/app/(dashboard)/student/page.tsx(93,55): error TS2345: Argument of type 'Dispatch<SetStateAction<{ enrolledCoursesCount: number; pendingTasksCount: number; submittedThisWeekCount: number; recentAnnouncements: never[]; upcomingDeadlines: never[]; }>>' is not assignable to parameter of type '(value: { enrolledCoursesCount: number; pendingTasksCount: number; submittedThisWeekCount: number; recentAnnouncements: any[]; upcomingDeadlines: any[]; }) => void | PromiseLike<void>'.
+  Types of parameters 'value' and 'value' are incompatible.
+    Type '{ enrolledCoursesCount: number; pendingTasksCount: number; submittedThisWeekCount: number; recentAnnouncements: any[]; upcomingDeadlines: any[]; }' is not assignable to type 'SetStateAction<{ enrolledCoursesCount: number; pendingTasksCount: number; submittedThisWeekCount: number; recentAnnouncements: never[]; upcomingDeadlines: never[]; }>'.
+      Type '{ enrolledCoursesCount: number; pendingTasksCount: number; submittedThisWeekCount: number; recentAnnouncements: any[]; upcomingDeadlines: any[]; }' is not assignable to type '{ enrolledCoursesCount: number; pendingTasksCount: number; submittedThisWeekCount: number; recentAnnouncements: never[]; upcomingDeadlines: never[]; }'.
+        Types of property 'recentAnnouncements' are incompatible.
+          Type 'any[]' is not assignable to type 'never[]'.
+            Type 'any' is not assignable to type 'never'.
+src/app/(dashboard)/student/tasks/page.tsx(31,31): error TS2322: Type '{ tasks: any[]; isLoading: boolean; }' is not assignable to type 'IntrinsicAttributes & TaskListProps'.
+  Property 'isLoading' does not exist on type 'IntrinsicAttributes & TaskListProps'.
+src/app/api/announcements/route.ts(44,9): error TS2353: Object literal may only specify known properties, and 'content' does not exist in type 'Without<AnnouncementCreateInput, AnnouncementUncheckedCreateInput> & AnnouncementUncheckedCreateInput'.
+src/app/api/courses/[courseId]/route.ts(31,13): error TS2353: Object literal may only specify known properties, and 'student' does not exist in type 'EnrollmentInclude<DefaultArgs>'.
+src/app/api/notes/[noteId]/route.ts(30,31): error TS2339: Property 'note' does not exist on type 'PrismaClient<PrismaClientOptions, never, DefaultArgs>'.
+src/app/api/notes/[noteId]/route.ts(57,18): error TS2339: Property 'note' does not exist on type 'PrismaClient<PrismaClientOptions, never, DefaultArgs>'.
+src/app/api/notes/route.ts(21,36): error TS2339: Property 'note' does not exist on type 'PrismaClient<PrismaClientOptions, never, DefaultArgs>'.
+src/app/api/notes/route.ts(54,31): error TS2339: Property 'note' does not exist on type 'PrismaClient<PrismaClientOptions, never, DefaultArgs>'.
+src/app/api/submissions/route.ts(29,13): error TS2339: Property 'filePath' does not exist on type '{ fileUrl: string; fileName: string; }'.
+src/app/api/submissions/route.ts(29,59): error TS2554: Expected 1 arguments, but got 3.
+src/app/api/submissions/route.ts(35,9): error TS2353: Object literal may only specify known properties, and 'content' does not exist in type 'Without<SubmissionCreateInput, SubmissionUncheckedCreateInput> & SubmissionUncheckedCreateInput'.
+src/components/assignments/AssignmentCard.tsx(46,25): error TS2322: Type '{ assignmentId: string; }' is not assignable to type 'IntrinsicAttributes & { children: ReactNode; assignment: { id: string; title: string; description: string | null; createdAt: Date; updatedAt: Date; courseId: string; dueDate: Date; maxPoints: number; }; }'.
+  Property 'assignmentId' does not exist on type 'IntrinsicAttributes & { children: ReactNode; assignment: { id: string; title: string; description: string | null; createdAt: Date; updatedAt: Date; courseId: string; dueDate: Date; maxPoints: number; }; }'. Did you mean 'assignment'?
+src/components/assignments/GradeForm.tsx(33,5): error TS2322: Type 'Resolver<{ grade: unknown; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }>' is not assignable to type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }>'.
+  Types of parameters 'options' and 'options' are incompatible.
+    Type 'ResolverOptions<{ grade: number; feedback?: string | undefined; }>' is not assignable to type 'ResolverOptions<{ grade: unknown; feedback?: string | undefined; }>'.
+      Type 'unknown' is not assignable to type 'number'.
+src/components/assignments/GradeForm.tsx(44,11): error TS2322: Type 'Control<{ grade: number; feedback?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Control<{ grade: number; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }>'.
+  The types of '_options.resolver' are incompatible between these types.
+    Type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, TFieldValues> | undefined' is not assignable to type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }> | undefined'.
+      Type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }>'.
+        Type 'ResolverResult<{ grade: number; feedback?: string | undefined; }, TFieldValues> | Promise<ResolverResult<{ grade: number; feedback?: string | undefined; }, TFieldValues>>' is not assignable to type 'ResolverResult<{ grade: number; feedback?: string | undefined; }, { grade: number; feedback?: string | undefined; }> | Promise<ResolverResult<{ grade: number; feedback?: string | undefined; }, { ...; }>>'.
+          Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverResult<{ grade: number; feedback?: string | undefined; }, { grade: number; feedback?: string | undefined; }> | Promise<ResolverResult<{ grade: number; feedback?: string | undefined; }, { ...; }>>'.
+            Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverSuccess<{ grade: number; feedback?: string | undefined; }>'.
+              Type 'TFieldValues' is not assignable to type '{ grade: number; feedback?: string | undefined; }'.
+                Property 'grade' is missing in type 'FieldValues' but required in type '{ grade: number; feedback?: string | undefined; }'.
+src/components/assignments/GradeForm.tsx(57,11): error TS2322: Type 'Control<{ grade: number; feedback?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Control<{ grade: number; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }>'.
+  The types of '_options.resolver' are incompatible between these types.
+    Type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, TFieldValues> | undefined' is not assignable to type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }> | undefined'.
+      Type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Resolver<{ grade: number; feedback?: string | undefined; }, any, { grade: number; feedback?: string | undefined; }>'.
+        Type 'ResolverResult<{ grade: number; feedback?: string | undefined; }, TFieldValues> | Promise<ResolverResult<{ grade: number; feedback?: string | undefined; }, TFieldValues>>' is not assignable to type 'ResolverResult<{ grade: number; feedback?: string | undefined; }, { grade: number; feedback?: string | undefined; }> | Promise<ResolverResult<{ grade: number; feedback?: string | undefined; }, { ...; }>>'.
+          Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverResult<{ grade: number; feedback?: string | undefined; }, { grade: number; feedback?: string | undefined; }> | Promise<ResolverResult<{ grade: number; feedback?: string | undefined; }, { ...; }>>'.
+            Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverSuccess<{ grade: number; feedback?: string | undefined; }>'.
+              Type 'TFieldValues' is not assignable to type '{ grade: number; feedback?: string | undefined; }'.
+                Property 'grade' is missing in type 'FieldValues' but required in type '{ grade: number; feedback?: string | undefined; }'.
+src/components/courses/CourseCard.tsx(23,51): error TS2339: Property 'name' does not exist on type '{ id: string; classCode: string; title: string; description: string | null; isArchived: boolean; createdAt: Date; updatedAt: Date; instructorId: string; } & { _count: { students: number; }; }'.
+src/components/courses/CourseCreateForm.tsx(27,37): error TS2304: Cannot find name 'courseSchema'.
+src/components/courses/CourseCreateForm.tsx(30,39): error TS2304: Cannot find name 'courseSchema'.
+src/components/courses/CourseCreateForm.tsx(31,27): error TS2304: Cannot find name 'courseSchema'.
+src/components/layout/PageHeader.tsx(17,8): error TS2304: Cannot find name 'action'.
+src/components/layout/PageHeader.tsx(17,24): error TS2304: Cannot find name 'action'.
+src/components/layout/Topbar.tsx(9,8): error TS2307: Cannot find module '@/components/ui/dropdown-menu' or its corresponding type declarations.
+src/components/notes/NoteCard.tsx(26,15): error TS2339: Property 'content' does not exist on type '{ id: string; createdAt: Date; userId: string; title: string; updatedAt: Date; body: string; }'.
+src/components/notes/NoteEditor.tsx(40,22): error TS2339: Property 'content' does not exist on type '{ id: string; createdAt: Date; userId: string; title: string; updatedAt: Date; body: string; }'.
+src/components/notes/NoteEditor.tsx(47,22): error TS2339: Property 'content' does not exist on type '{ id: string; createdAt: Date; userId: string; title: string; updatedAt: Date; body: string; }'.
+src/components/notes/NoteList.tsx(59,21): error TS2339: Property 'content' does not exist on type '{ id: string; createdAt: Date; userId: string; title: string; updatedAt: Date; body: string; }'.
+src/components/ui/calendar.tsx(58,9): error TS2578: Unused '@ts-expect-error' directive.
+src/components/ui/resizable.tsx(15,5): error TS2322: Type '{ id?: string | undefined; title?: string | undefined; content?: string | undefined; slot?: string | undefined; style?: CSSProperties | undefined; autoFocus?: boolean | undefined; ... 283 more ...; className: string; }' is not assignable to type 'IntrinsicAttributes & BasePanelAttributes & { className?: string | undefined; collapsedSize?: string | number | undefined; collapsible?: boolean | undefined; ... 9 more ...; style?: CSSProperties | undefined; }'.
+  Property 'ref' does not exist on type 'IntrinsicAttributes & BasePanelAttributes & { className?: string | undefined; collapsedSize?: string | number | undefined; collapsible?: boolean | undefined; ... 9 more ...; style?: CSSProperties | undefined; }'.
+src/components/ui/resizable.tsx(28,46): error TS2339: Property 'PanelResizeHandle' does not exist on type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/resizable.tsx(29,60): error TS2339: Property 'PanelResizeHandle' does not exist on type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/resizable.tsx(31,23): error TS2339: Property 'PanelResizeHandle' does not exist on type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/resizable.tsx(42,24): error TS2339: Property 'PanelResizeHandle' does not exist on type 'typeof import("/home/ruueee/Desktop/comsci/REPOS/EDUTRAK_V3/edutrack/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
